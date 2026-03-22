@@ -1,0 +1,14 @@
+# Ignore compiled Java class files
+*.class
+
+# Ignore project metadata (Eclipse/VS Code settings)
+.project
+.classpath
+.settings/
+.vscode/
+
+# Ignore local database logs
+*.log
+
+# Ignore the downloads folder so your repo doesn't get bloated
+downloads/
