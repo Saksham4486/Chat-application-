@@ -1,0 +1,17 @@
+{
+  "chatRoom": "@Gaurav",
+  "totalMessages": 2,
+  "exportedAt": "2026-04-26T15:04:22.6207036",
+  "messages": [
+    {
+      "sender": "Gaurav",
+      "content": "mai ka ladle",
+      "timestamp": "2026-04-26 15:04:22"
+    },
+    {
+      "sender": "Gaurav",
+      "content": "meow",
+      "timestamp": "2026-04-26 15:04:22"
+    }
+  ]
+}

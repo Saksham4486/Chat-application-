@@ -1,0 +1,57 @@
+{
+  "chatRoom": "general",
+  "totalMessages": 10,
+  "exportedAt": "2026-04-24T12:29:14.8070088",
+  "messages": [
+    {
+      "sender": "Undertaker",
+      "content": "Hi",
+      "timestamp": "2026-04-24 12:29:14"
+    },
+    {
+      "sender": "Undertaker",
+      "content": "Hi",
+      "timestamp": "2026-04-24 12:29:14"
+    },
+    {
+      "sender": "Gaurav",
+      "content": "hi",
+      "timestamp": "2026-04-24 12:29:14"
+    },
+    {
+      "sender": "Undertaker",
+      "content": "HI",
+      "timestamp": "2026-04-24 12:29:14"
+    },
+    {
+      "sender": "Undertaker",
+      "content": "HI",
+      "timestamp": "2026-04-24 12:29:14"
+    },
+    {
+      "sender": "Gaurav",
+      "content": "kya be bsdk",
+      "timestamp": "2026-04-24 12:29:14"
+    },
+    {
+      "sender": "Gaurav",
+      "content": "kya be bsdk",
+      "timestamp": "2026-04-24 12:29:14"
+    },
+    {
+      "sender": "Gaurav",
+      "content": "mai ka ladle",
+      "timestamp": "2026-04-24 12:29:14"
+    },
+    {
+      "sender": "Gaurav",
+      "content": "meow",
+      "timestamp": "2026-04-24 12:29:14"
+    },
+    {
+      "sender": "Undertaker",
+      "content": "hi",
+      "timestamp": "2026-04-24 12:29:14"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+2026-04-27T17:40:59.645Z [INFO] ----------------------invoke appmod-list-jdks----------------------
+2026-04-27T17:40:59.646Z [INFO] [Tool.invoke]({name: appmod-list-jdks, modelId: auto, input: {
+  "sessionId": "",
+  "projectPath": "c:\\Users\\saksh\\OneDrive\\Desktop\\ChatApp_Final\\FinalChatApp"
+}}).
+2026-04-27T17:40:59.647Z [INFO] [Tool.invoke] do invoke.
+2026-04-27T17:40:59.785Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following jdks in your system:\n\n1. Java 21.0.7\n   📁 Path: C:\\Program Files\\Java\\jdk-21\\bin\n   🏷️ Source: others\n\n2. Java 23.0.1\n   📁 Path: C:\\Program Files\\Java\\jdk-23\\bin\n   🏷️ Source: others\n\n3. Java 25.0.2\n   📁 Path: C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin\n   🏷️ Source: others\n\n4. Java 26\n   📁 Path: C:\\Program Files\\Java\\jdk-26\\bin\n   🏷️ Source: PATH,JAVA_HOME\n\nTotal: 4 JDK installation(s) found"
+}}).
+2026-04-27T17:40:59.786Z [INFO] ----------------------invoked appmod-list-jdks----------------------
+2026-04-27T17:41:10.606Z [INFO] ----------------------invoke appmod-build-java-project----------------------
+2026-04-27T17:41:10.607Z [INFO] [Tool.invoke]({name: appmod-build-java-project, modelId: auto, input: {
+  "jdkPath": "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot",
+  "projectPath": "c:\\Users\\saksh\\OneDrive\\Desktop\\ChatApp_Final\\FinalChatApp",
+  "sessionId": ""
+}}).
+2026-04-27T17:41:10.608Z [INFO] [Tool.invoke] do invoke.
+2026-04-27T17:41:10.611Z [INFO] Project c:\Users\saksh\OneDrive\Desktop\ChatApp_Final\FinalChatApp is a maven project, try to get java version from pom.xml
+2026-04-27T17:41:10.615Z [INFO] Project java version: 25
+2026-04-27T17:41:10.616Z [INFO] Maven project detected.
+2026-04-27T17:41:10.617Z [INFO] Build tool type: mvn
+2026-04-27T17:41:10.617Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Eclipse Adoptium\\jdk-25.0.2.10-hotspot\\bin",
+  "version": "25"
+}
+2026-04-27T17:41:10.710Z [INFO] Build tool: undefined
+2026-04-27T17:41:10.711Z [ERROR] Failed to detect or resolve build tool for the project at c:\Users\saksh\OneDrive\Desktop\ChatApp_Final\FinalChatApp.
+2026-04-27T17:41:10.712Z [ERROR] [Tool.invoke] error occurs when invoking tool appmod-build-java-project: UserError: Failed to detect or resolve build tool for the project at c:\Users\saksh\OneDrive\Desktop\ChatApp_Final\FinalChatApp. Please ensure the build tool Maven is installed and properly configured on the machine..
+2026-04-27T17:41:10.713Z [INFO] ----------------------invoked appmod-build-java-project----------------------
+2026-04-27T17:41:12.377Z [INFO] ---------------------prepare appmod-list-mavens----------------------
+2026-04-27T17:41:12.378Z [INFO] [Tool.prepareInvocation]({name: appmod-list-mavens, input: {
+  "sessionId": ""
+}}).
+2026-04-27T17:41:12.378Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-27T17:41:12.379Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List mavens"
+}}).
+2026-04-27T17:41:12.380Z [INFO] ----------------------prepared appmod-list-mavens----------------------
+2026-04-27T17:41:12.429Z [INFO] ----------------------invoke appmod-list-mavens----------------------
+2026-04-27T17:41:12.430Z [INFO] [Tool.invoke]({name: appmod-list-mavens, modelId: auto, input: {
+  "sessionId": "",
+  "projectPath": "c:\\Users\\saksh\\OneDrive\\Desktop\\ChatApp_Final\\FinalChatApp"
+}}).
+2026-04-27T17:41:12.431Z [INFO] [Tool.invoke] do invoke.
+2026-04-27T17:41:12.438Z [INFO] [Tool.invoke]({result: {
+  "message": "No Maven installations found."
+}}).
+2026-04-27T17:41:12.439Z [INFO] ----------------------invoked appmod-list-mavens----------------------
+2026-04-27T17:41:16.534Z [INFO] ---------------------prepare appmod-install-maven----------------------
+2026-04-27T17:41:16.535Z [INFO] [Tool.prepareInvocation]({name: appmod-install-maven, input: {
+  "sessionId": "",
+  "version": "latest"
+}}).
+2026-04-27T17:41:16.536Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-04-27T17:41:19.103Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install Maven",
+  "confirmationMessages": {
+    "title": "Download and install Maven",
+    "message": "\nThis tool will download and install Maven latest from Apache with below settings.\n- **Version**: latest\n- **Vendor**: Apache\n- **Url**: https://dlcdn.apache.org/maven/maven-3/3.9.15/binaries/apache-maven-3.9.15-bin.zip\n- **Destination**: `C:\\Users\\saksh\\.maven`\n- **Checksum**: SHA512: 251c676eb88684d6dd86c666817979d256a335c31ad34ab0e1df17eeca1cd504a6c890e906a46d04e51cc7a4fb02f33a75971ef750558034e0a81c257be02267\n- **Signature**: https://dlcdn.apache.org/maven/maven-3/3.9.15/binaries/apache-maven-3.9.15-bin.zip.asc\n- **Public Key**: https://downloads.apache.org/maven/KEYS\n"
+  }
+}}).
+2026-04-27T17:41:19.104Z [INFO] ----------------------prepared appmod-install-maven----------------------
