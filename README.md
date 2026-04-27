@@ -1,74 +1,87 @@
-# ChatApp — Simple Persistent Chat (Discord-style UI)
 
-## ✅ No Google login. No internet. No database server needed.
+💬 J-Link Chat Application
+A Robust Real-Time Communication System with Google Drive Integration
 
----
+J-Link is a high-performance desktop chat application built using Java Swing and Socket Programming. Designed with a modern, Discord-inspired UI, it allows for real-time multi-client communication, group management, and secure chat history backups via the Google Drive API.
 
-## How Data is Stored (like WhatsApp)
+🚀 Key Features
+Real-Time Communication: Multi-threaded server handling concurrent client connections using TCP/IP Sockets.
 
-All data lives in **~/.chatapp/** on your computer:
+Modern UI/UX: Dark-themed interface featuring custom-drawn UI components, avatars, and responsive layouts.
 
-| File | Contains |
-|---|---|
-| `users.dat` | Usernames + SHA-256 password hashes |
-| `friends_<user>.dat` | Your friends list (one per line) |
-| `groups.dat` | Group names and members |
-| `msgs_<channel>.dat` | Chat history for each channel/DM |
-| `session.dat` | Auto-login: remembers you between restarts |
+Cloud Backup System: Export your conversations as JSON files and automatically sync them to your Google Drive.
 
-**Nothing is ever lost.** Close the app, reopen it — your friends, groups, and all messages are still there.
+Group & Private Messaging: Seamlessly switch between global channels, private DMs, and group chats.
 
----
+Dynamic Connectivity: Support for LAN connections, allowing users on different laptops to chat over the same network.
 
-## How to Compile & Run
+Local Persistence: Integrated LocalDB to store user sessions and chat history for offline viewing.
 
-### Step 1 — Compile (no extra jars needed!)
-```bash
-# Windows
-javac ServerMulti.java ClientHandler.java ChatApplication\*.java
+🛠 Tech Stack
+Language: Java (JDK 17+)
 
-# Mac / Linux  
-javac ServerMulti.java ClientHandler.java ChatApplication/*.java
-```
+GUI: Java Swing & AWT (Advanced Window Toolkit)
 
-### Step 2 — Start Server (one terminal)
-```bash
-java ServerMulti
-```
+Networking: Java Socket API
 
-### Step 3 — Start Client (one or more terminals)
-```bash
-java ChatApplication.ChatLoginUI
-```
+Cloud API: Google Drive API v3 (OAuth 2.0)
 
----
+Build System: Maven
 
-## First Time Use
+Data Format: JSON (for exports and configuration)
 
-1. Click **Register** → enter username + password → done!
-2. Next time you open the app → auto-logged in (no password needed)
-3. Add friends by username → they appear online instantly when they join
-4. Create a group → it's saved forever, anyone can join by name
+📂 Project Architecture
 
----
+Shutterstock
+Explore
+Plaintext
+FinalChatApp/
+├── src/main/java/ChatApplication/
+│   ├── DiscordMainUI.java      # Main Frontend & Event Handling
+│   ├── ServerMulti.java        # Central Server Logic
+│   ├── BackupManager.java      # JSON Serialization Logic
+│   └── GoogleDriveManager.java # API Authentication & Uploads
+├── src/main/resources/         # UI Assets & API Credentials
+├── pom.xml                     # Project Dependencies (Maven)
+└── .gitignore                  # Security & Build Rules
 
-## Features
 
-| Feature | How it works |
-|---|---|
-| 👤 Login / Register | Simple username + password (SHA-256 hashed locally) |
-| 🔄 Auto-login | Session remembered in `~/.chatapp/session.dat` |
-| 👥 Friends | Saved to disk — survive app restarts |
-| 💬 DMs | Private messages between two users |
-| 🏰 Groups | Persistent rooms, anyone can join |
-| 📜 Chat history | Last 100 messages loaded when you open a channel |
-| 📎 File sharing | Images, videos, docs via chat channel |
-| 💾 Backup | Export chat as JSON to Desktop |
-| 😊 Emoji picker | Built-in emoji panel |
+⚙️ Setup & Installation
+1. Prerequisites
+Java Development Kit (JDK) 17 or higher.
 
----
+Apache Maven installed.
 
-## Free Cloud — None Needed!
+A credentials.json file from the Google Cloud Console with Drive API enabled.
 
-All your data is saved locally for free, forever.
-The "☁ Backup" button exports to a JSON file you can keep anywhere (Google Drive, USB, email to yourself).
+2. Installation
+Clone the repository:
+
+Bash
+git clone https://github.com/Saksham4486/Chat-application-.git
+Navigate to the directory:
+
+Bash
+cd FinalChatApp
+Install dependencies:
+
+Bash
+mvn clean install
+3. Running the Application
+Start the Server: Execute ServerMulti.java to begin listening for connections.
+
+Start the Client: Execute DiscordMainUI.java.
+
+Connection: Enter the server's IP address (use localhost if running on the same machine).
+
+🔒 Security and Best Practices
+This project follows professional security standards by:
+
+Utilizing a .gitignore to prevent sensitive credentials.json and OAuth tokens from being exposed in version control.
+
+Excluding the Maven target/ folder to keep the repository lightweight and source-focused.
+
+👨‍💻 Author
+Saksham Trivedi
+B.Tech Computer Science & Engineering Student
+Graphic Era University
